@@ -4,7 +4,12 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.annotation.Resource;
 
+import org.springframework.stereotype.Repository;
+
+@Repository	
+@Resource
 public class ReviewRepository {
 
 private Map<Long, Reviews> reviewList = new HashMap<>();

@@ -6,10 +6,15 @@
 <body>
 	<h1>A List of Reviews</h1>
 	
-	<div th:each="reviews: ${reviews}">
+	<div th:each="review: ${reviews}">
 		<li>
-		<a th:href="@{/reviews(id=${reviews.id})}" th:text="${reviews.title}"></a>
+		<a th:href="@{/review(id=${reviews.id})}" th:text="${reviews.title}"></a>
 		</li>
+	</div>
+	
+	<div th:each="review: ${reviews}">
+		<li th:each="review : ${reviews" th:text="${review.getDescription()}"></li>
+	
 	</div>
 </body>
 

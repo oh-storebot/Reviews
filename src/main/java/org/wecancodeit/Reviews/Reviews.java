@@ -12,6 +12,8 @@ public class Reviews {
 		this.id = id;
 		this.title = title;
 		this.imgUrl = imgUrl;
+		this.reviewCategory = reviewCategory;
+		this.content = content;
 	}
 
 	public Long getId() {
